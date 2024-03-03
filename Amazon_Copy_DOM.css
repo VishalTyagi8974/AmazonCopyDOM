@@ -1,0 +1,299 @@
+header img {
+    width: 10%;
+}
+
+
+
+button {
+    font-family: "Noto Sans", sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+
+header {
+    padding: 0 3%;
+    background-color: #01161e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header form {
+    width: 50%;
+}
+
+header input {
+    width: 90%;
+    height: 3em;
+}
+
+header form {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+header form button {
+    height: 3em;
+    border-left: none;
+    width: 3.5em;
+    border: none;
+    background-color: #ffc300;
+}
+
+header form button:active {
+    background-color: #f4cf55;
+}
+
+header button {
+    background-color: transparent;
+    color: white;
+}
+
+header form input {
+    padding: 0 1.5em;
+}
+
+#cart {
+    font-size: 1.2em;
+    border: none;
+}
+
+#cart img {
+    width: 40%;
+}
+
+#signin {
+    padding: 1em 0.5em;
+    border: none;
+    font-size: 1.2em;
+}
+
+#signin:hover {
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+#cart:hover {
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+#smalllogo {
+    display: none;
+}
+
+#signin span {
+    display: inline;
+}
+
+
+@media (max-width:775px) {
+    #smalllogo {
+        display: inline;
+    }
+
+    #biglogo {
+        display: none;
+    }
+
+    #signin {
+        font-size: 1em;
+    }
+
+    #cart {
+        font-size: 1em;
+    }
+
+    .cartitems,
+    .signinbox {
+        width: 40%;
+    }
+
+    #initems button,
+    #initems input,
+    #initems {
+        font-size: 0.7rem;
+    }
+
+    #items div {
+        margin: 2.5%;
+        justify-content: space-around;
+    }
+
+}
+
+@media (max-width:500px) {
+    header {
+        padding-right: 0;
+    }
+
+    #signin span {
+        display: none;
+    }
+
+    #signin {
+        font-size: 0.8em;
+    }
+
+    #cart {
+        font-size: 0.8em;
+    }
+
+    #cart img {
+        width: 30%;
+    }
+
+    #initems {
+        font-size: 0.5rem;
+    }
+
+    #initems button,
+    #initems input {
+        font-size: 0.6rem;
+    }
+
+    #initems .signinbox {
+        height: 20vh;
+    }
+
+    #initems .cartitems {
+        width: 40%;
+    }
+
+    #initems .search {
+        height: 10vh;
+        width: 40%;
+    }
+}
+
+#initems {
+    position: relative;
+}
+
+.cartitems {
+    max-height: 70vh;
+    min-height: 20vh;
+    position: absolute;
+    border: 1px solid black;
+    width: 30%;
+    right: 5px;
+    top: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+.signinbox {
+    box-sizing: border-box;
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    border: 1px solid black;
+    height: 35vh;
+    width: 30%;
+    right: 12%;
+    top: 5px;
+    text-align: center;
+
+}
+
+.search {
+    box-sizing: border-box;
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    border: 1px solid black;
+    height: 20vh;
+    width: 30%;
+    right: 50%;
+    top: 5px;
+    text-align: center;
+}
+
+.invisible {
+    display: none;
+}
+
+#items {
+    width: 100%;
+    /* height: 100vh; */
+    /* border: 2px solid black; */
+}
+
+#initems div {
+    background-color: #f8f7ff;
+    box-shadow: -1px 1px 15px rgb(138, 138, 138), 1px -1px 15px rgb(138, 138, 138);
+
+}
+
+#initems button {
+    background-color: #ffc300;
+    margin: auto;
+    height: 2em;
+    margin-top: 1.5em;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+
+}
+
+#initems button:active {
+    background-color: #f4cf55;
+}
+
+#initems input {
+    padding-left: 1em;
+    width: 80%;
+    border-radius: 10px;
+    height: 1.5em;
+    margin-top: 0.5em;
+    border: 2px solid black;
+}
+
+#items {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 1% 2%;
+    justify-content: space-around;
+
+}
+
+#items div {
+    box-sizing: border-box;
+    min-width: 20%;
+    height: 60vh;
+    margin: 2.5%;
+    max-width: 60%;
+}
+
+#items img {
+    width: 100%;
+    height: 50vh;
+
+}
+
+#items button {
+    width: 100%;
+    background-color: #ffc300;
+    border-radius: 10px;
+    border: none;
+}
+
+#items button:active {
+    background-color: #f4cf55;
+
+}
+
+.cartitems img {
+    width: 70%;
+    height: 5%;
+}

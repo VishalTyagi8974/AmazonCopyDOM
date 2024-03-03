@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon_Copy_DOM</title>
+    <link rel="stylesheet" href="Amazon_Copy_DOM.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img id="biglogo" src="images\AmazonLogo.jpg" alt="amazon.in">
+        <img src="images/AmazonSmallLogo.png" id="smalllogo" alt="">
+        <form action="" id="searchInp">
+            <input type="search" placeholder="Search Amazon.in" name="search"><button type="submit"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M21.172 24l-7.387-7.387c-1.388.874-3.024 1.387-4.785 1.387-4.971 0-9-4.029-9-9s4.029-9 9-9 9 4.029 9 9c0 1.761-.514 3.398-1.387 4.785l7.387 7.387-2.828 2.828zm-12.172-8c3.859 0 7-3.14 7-7s-3.141-7-7-7-7 3.14-7 7 3.141 7 7 7z" />
+                </svg></button>
+        </form>
+
+
+        <button id="signin"><span>Hello &#128522;,</span> Sign In</button>
+        <button id="cart"><img src="images/cart.png" alt="">Cart</button>
+    </header>
+    <section id="initems">
+        <div class="search invisible">
+            sorry doesn't have a server &#128517;.
+        </div>
+
+        <div class="signinbox invisible">
+            <form action="">
+                <label for="email">
+                    <h2>Enter Your Email</h2>
+                </label>
+                <input type="text" id="email" placeholder="email">
+                <input type="password" id="password" placeholder="password">
+                <button>SignIn</button>
+            </form>
+        </div>
+        <div class="cartitems invisible">
+            <h2 style="background-color : #ffc300; border-radius:10px;margin: 2em 10%;padding:0 1em;"><i>Empty Cart</i>
+            </h2>
+        </div>
+    </section>
+    <section id="items">
+
+        <div id="i1">
+            <img src="images/ac.png" alt=""><br>
+            <button>Add to Cart</button>
+        </div>
+
+        <div id="i2">
+            <img src="images/tv.png" alt=""><br>
+            <button>Add to Cart</button>
+        </div>
+
+        <div id="i3">
+            <img src="images/lap.png" alt=""><br>
+            <button>Add to Cart</button>
+        </div>
+
+        <div id="i4">
+            <img src="images/wm.png" alt=""><br>
+            <button>Add to Cart</button>
+        </div>
+
+        <div id="i5">
+            <img src="images/phone.png" alt=""><br>
+            <button>Add to Cart</button>
+        </div>
+
+        <div id="i6">
+            <img src="images/mouse.png" alt=""><br>
+            <button>Add to Cart</button>
+        </div>
+
+        <div id="i7">
+            <img src="images/fridge.png" alt=""><br>
+            <button>Add to Cart</button>
+        </div>
+
+        <div id="i8">
+            <img src="images/fan.png" alt=""><br>
+            <button>Add to Cart</button>
+        </div>
+
+    </section>
+
+    <script src="Amazon_Copy_DOM.js"></script>
+</body>
+
+</html>
